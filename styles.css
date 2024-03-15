@@ -7,6 +7,8 @@
 .main-header {
   color: #fff;
   background-color: #1f2937;
+  width: auto;
+  height: 530px;
   border-bottom: 2px solid #fff;
 }
 
@@ -33,6 +35,7 @@
 
 .nav-list {
   display: flex;
+  justify-content: flex-end;
   list-style: none;  /* Remove default bullet points */
   font-size: 18px;
   color: #E5E7EB;
@@ -54,6 +57,16 @@
 .image-container,
 .signup-button {
   margin-bottom: 20px; /* Add space between elements */
+}
+
+.title-section {
+  font-size: 48px;
+  color: #F9faf8;
+}
+
+.text-section {
+  font-size: 18px;
+  color: #E5E7EB;
 }
 
 .placeholder-image-container {
