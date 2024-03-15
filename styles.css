@@ -2,10 +2,94 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.main-header {
+  color: #fff;
+  background-color: #1f2937;
+  border-bottom: 2px solid #fff;
+}
+
+.header,
+.main-content {
+  display: flex;
+  align-items: center;  /* Vertically align items within each section */
+  padding: 10px 20px;
+}
+
+.header {
+  justify-content: space-between; /* Horizontally space out logo and navigation */
+}
+
+.logo-container {
+  flex: 0 0 auto; /* Allow logo to shrink but not grow */
+  font-size: 24px;
+  color: #F9faf8;
+}
+
+.navigation {
+  flex: 1; /* Allow navigation to grow and fill available space */
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;  /* Remove default bullet points */
+  font-size: 18px;
+  color: #E5E7EB;
+  margin: 0;  /* Remove default margin */
+  padding: 0;  /* Remove default padding */
+}
+
+.nav-item {
+  margin-right: 20px; /* Add space between navigation items */
+}
+
+.main-content {
+  flex-direction: column; /* Stack elements vertically within this section */
+  text-align: center;  /* Center text content horizontally */
+}
+
+.title-section,
+.text-section,
+.image-container,
+.signup-button {
+  margin-bottom: 20px; /* Add space between elements */
+}
+
+.placeholder-image-container {
+  flex: 0 0 auto;  /* Allow image to shrink but not grow */
+}
+
+.signup-button {
+  flex: 0 0 auto;  /* Allow button to shrink but not grow */
+  background-color: #3498db; /* Set button background color */
+  color: #fff;  /* Set button text color */
+  padding: 8px 16px;  /* Add padding to button */
+  border: none; /* Remove default button border */
+  border-radius: 4px; /* Add rounded corners to button */
+}
+
+.signup-button a {
+  color: inherit;  /* Inherit button text color */
+  text-decoration: none;  /* Remove underline from link */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack logo and navigation on smaller screens */
   }
-  
-  .header-container {
-    display: flex;
+  .navigation {
+    flex: none; /* Navigation shouldn't grow on smaller screens */
+  }
+  .main-content {
+    text-align: left; /* Align text left on smaller screens */
+  }
+}
+
+  .footer {
     color: #fff;
     background-color: #1f2937;
+    text-align: center;
+    padding: 35px;
   }
