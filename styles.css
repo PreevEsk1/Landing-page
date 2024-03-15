@@ -59,6 +59,7 @@
   margin-bottom: 20px; /* Add space between elements */
 }
 
+
 .title-section {
   font-size: 48px;
   color: #F9faf8;
@@ -70,14 +71,15 @@
 }
 
 .placeholder-image-container {
+  display: flex;
   flex: 0 0 auto;  /* Allow image to shrink but not grow */
 }
 
 .signup-button {
-  flex: 0 0 auto;  /* Allow button to shrink but not grow */
+  flex: 1;  /* Allow button to shrink but not grow */
   background-color: #3498db; /* Set button background color */
   color: #fff;  /* Set button text color */
-  padding: 8px 16px;  /* Add padding to button */
+  padding: 8px 16px;  /*Add padding to button */
   border: none; /* Remove default button border */
   border-radius: 4px; /* Add rounded corners to button */
 }
@@ -85,19 +87,6 @@
 .signup-button a {
   color: inherit;  /* Inherit button text color */
   text-decoration: none;  /* Remove underline from link */
-}
-
-/* Optional: Responsive adjustments */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column; /* Stack logo and navigation on smaller screens */
-  }
-  .navigation {
-    flex: none; /* Navigation shouldn't grow on smaller screens */
-  }
-  .main-content {
-    text-align: left; /* Align text left on smaller screens */
-  }
 }
 
   .footer {
